@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadiani | Backend Web Developer</title>
+    <link rel="shortcut icon" href="{{url_for('static', filename='assets/image/favicon.jpg')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <div class="container">
+        <header class="header-container">
+            <div class="image-container">
+                <img src="{{url_for('static', filename='assets/image/logo.png')}}" alt="HadiWeb Logo" class="logo-image">
+            </div>
+            <nav class="navigation-container">
+                <ul class="navigation-bar">
+                    <li class="navigation">
+                        <a href="#" class="link-bar">Home</a>
+                    </li>
+                    <li class="navigation">
+                        <a href="#about-container" class="link-bar" aria-label="This About Me">About Me</a>
+                    </li>
+                    <li class="navigation">
+                        <a href="#project-container" class="link-bar" aria-label="This My Project">Project</a>
+                    </li>
+                    <li class="navigation">
+                        <a href="#contact-container" class="link-bar" aria-label="This My Contact">Contact Me</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="content-container">
+            <section class="about-container">
+                <div class="about-content">
+                    <h1 class="name-text">Hadiani</h1>
+                    <p class="lead-text">Perkenalkan saya adalah seorang web developer, hobi saya adalah memnonton anime, membuat projek dan selalu tetarik kepada hal baru.</p>
+                </div>
+            </section>
+            <section class="project-container">
+                <div class="project-content">
+                    
+                </div>
+            </section>
+            <section class="contact-container">
+                <div class="contact-content">
+
+                </div>
+            </section>
+        </main>
+        <footer class="footer-container">
+
+        </footer>
+    </div>
+
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+</body>
+</html>
