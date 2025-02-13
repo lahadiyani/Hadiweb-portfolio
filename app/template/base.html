@@ -33,19 +33,17 @@
         <main class="content-container">
             <section class="about-container">
                 <div class="about-content">
-                    <h1 class="name-text">Hadiani</h1>
-                    <p class="lead-text">Saya seorang web developer yang selalu penasaran dengan hal-hal baru. Hobi saya nonton anime, ngulik proyek, dan eksplorasi teknologi. Selalu siap buat tantangan baru dan senang belajar hal yang bikin otak muter! &#x1F680;</p>
-                    <img src="{{url_for('static', filename='assets/image/hero.png')}}" alt="" class="image-hero">
+                    <div class="text-box">
+                        <h1 class="name-text">Hadiani</h1>
+                        <p class="lead-text"></p>
+                    </div>
+                    <img src="{{url_for('static', filename='assets/image/hero.png')}}" alt="Logo Hadi" class="image-hero">
                 </div>
             </section>
             <section class="project-container">
                 <div class="project-content">
                     <div class="card-repo">
-                    {% for repo in repos %}
-                        <h3 class="repo-title">{{ repo.title }}</h3>
-                        <p class="repo-description">{{ repo.description }}</p>
-                        <a href="{{ repo.url }}" class="link-repo">Visit Here</a>
-                    {% endfor %}
+
                     </div>
                 </div>
             </section>
