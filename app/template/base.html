@@ -13,6 +13,10 @@
             <div class="image-container">
                 <img src="{{url_for('static', filename='assets/image/logo.png')}}" alt="HadiWeb Logo" class="logo-image">
             </div>
+            <div class="hamburger-icon">
+                <ion-icon name="menu" class="menu-icon"></ion-icon>
+                <ion-icon name="close" class="close-icon"></ion-icon>
+            </div>
             <nav class="navigation-container">
                 <ul class="navigation-bar">
                     <li class="navigation">
@@ -43,7 +47,7 @@
                     <img src="{{url_for('static', filename='assets/image/hero.png')}}" alt="Logo Hadi" class="image-hero">
                 </div>
             </section>
-            <section class="project-container">
+            <section class="project-container" style="display: none;">
                 <div class="project-content">
                     <div class="card-repo">
 

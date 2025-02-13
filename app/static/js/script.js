@@ -1,4 +1,20 @@
 document.addEventListener("DOMContentLoaded", async () => {
+    const menuIcon = document.querySelector(".menu-icon");
+    const closeIcon = document.querySelector(".close-icon");
+    const navContainer = document.querySelector(".navigation-container");
+
+    menuIcon.addEventListener("click", () => {
+        navContainer.classList.add("active");
+        menuIcon.style.display = "none";
+        closeIcon.style.display = "block";
+    });
+
+    closeIcon.addEventListener("click", () => {
+        navContainer.classList.remove("active");
+        closeIcon.style.display = "none";
+        menuIcon.style.display = "block";
+    });
+
     try {
         const response = await fetch("/api/repos");
         const repos = await response.json();
@@ -29,7 +45,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const roles = ["Web developer", "Mahasiswa", "Animelovers"];
     let roleIndex = 0;
     let textElement = document.querySelector(".lead-text");
-    const fullText = " yang selalu penasaran dengan hal-hal baru, hobi ngulik proyek, eksplorasi teknologi, dan nonton anime. Bagi saya, coding adalah seni dan tantangan yang bikin otak terus berpikir kreatif. Saya fokus pada pengembangan web dengan Flask untuk backend dan JavaScript native untuk frontend, serta tertarik eksplorasi AI dan embedding teks. Setiap hari adalah kesempatan untuk belajar, berkembang, dan menghadapi tantangan baru 🚀.";
+    const fullText = " yang selalu penasaran dengan hal-hal baru, hobi ngulik proyek, eksplorasi teknologi, dan nonton anime. Bagi saya, coding adalah seni dan tantangan yang bikin otak terus berpikir kreatif.";
         
     function typeWriter(text, i, callback) {
         if (i < text.length) {

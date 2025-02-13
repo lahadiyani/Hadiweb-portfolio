@@ -101,6 +101,27 @@ body {
     height: 90px;
 }
 
+/* Hamburger Icon */
+.hamburger-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 10;
+}
+
+.menu-icon, .close-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+}
+
+.close-icon {
+    display: none;
+}
+
 /* header */
 
 .navigation-container {
@@ -182,4 +203,175 @@ body {
     border-radius: 50%;
     width: 100%;
     max-width: 400px;
+}
+
+/* Media Query untuk iPad (768px ke bawah) */
+@media screen and (max-width: 768px) {
+    .header-container {
+        padding: 0 20px;
+        max-width: 100%;
+    }
+    
+    .image-container {
+        transform: translateX(-100%) translateY(-8%);
+        width: 120px;
+        height: 70px;
+    }
+    
+    .logo-image {
+        width: 120px;
+        height: 70px;
+    }
+
+    .hamburger-icon {
+        display: flex;
+    }
+
+    .navigation-container {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .navigation-bar {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .navigation-container.active {
+        left: 0;
+    }
+    
+    .navigation-bar {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link-bar::after {
+        content: '';
+        position: absolute;
+        bottom: 8px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 5px;
+        background-color: #1E201E;
+        transform: scaleX(0);
+        transition: 1.5s;
+    }
+    
+    .name-text {
+        font-size: 40px;
+    }
+    
+    .lead-text {
+        width: 100%;
+        max-width: 500px;
+        padding: 0 20px;
+        text-align: justify;
+    }
+    
+    .about-content {
+        flex-direction: column-reverse;
+        padding: 30px;
+    }
+    
+    /* Tambahkan ini untuk membalik urutan */
+    .text-box {
+        margin-top: 30px;
+    }
+    
+    .image-hero {
+        max-width: 300px;
+        margin-top: 0;
+    }
+    
+    .content-container {
+        padding-top: 100px;
+    }
+}
+
+/* Media Query untuk Mobile (480px ke bawah) */
+@media screen and (max-width: 480px) {
+    .header-container {
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .image-container {
+        margin: 10px 0;
+    }
+    
+    .navigation-container {
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    .navigation-bar {
+        flex-wrap: wrap;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .link-bar {
+        padding: 10px 0;
+        font-size: 14px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link-bar::after {
+        content: '';
+        position: absolute;
+        bottom: 8px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 5px;
+        background-color: #1E201E;
+        transform: scaleX(0);
+        transition: 1.5s;
+    }
+    
+    .name-text {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .lead-text {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .about-content {
+        padding: 20px;
+        flex-direction: column-reverse;
+    }
+    
+    .image-hero {
+        max-width: 250px;
+    }
+    
+    .text-box {
+        margin-top: 20px;
+    }
+    
+    .content-container {
+        padding-top: 80px;
+    }
 }
