@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Reset HTML5 elemen */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption, footer,
+header, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* Reset list */
+ul, ol {
+    list-style: none;
+}
+
+/* Reset link */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Reset button */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* Reset input dan textarea */
+input, textarea {
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+/* Reset tabel */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Default gaya body */
+body {
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Container full width */
+.container {
+    width: 100%;
+}
+
+/* header */
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-container {
+    width: 150px;
+    height: 90px;
+    transform: translateX(-120%) translateY(-2%);
+}
+
+.logo-image {
+    width: 150px;
+    height: 90px;
+}
+
+/* header */
+
+.navigation-bar {
+    display: flex; /* Mengatur agar item di dalamnya sejajar secara horizontal */
+    flex-direction: row; /* (Opsional, karena ini default) */
+    list-style: none; /* Menghilangkan bullet point default */
+    padding: 0; /* Menghapus padding default */
+    margin: 0; /* Menghapus margin default */
+    transform: translateX(50%);
+}
+
+.navigation {
+    padding: 5px 10px;
+}
+
+.link-bar {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.link-bar:hover {
+    border-radius: 5px;
+}
