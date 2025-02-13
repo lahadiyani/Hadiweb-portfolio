@@ -15,6 +15,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         menuIcon.style.display = "block";
     });
 
+    window.addEventListener("load", function() {
+        // Sembunyikan spinner setelah load selesai
+        document.querySelector(".spinner-wrapper").style.display = "none";
+        // Tampilkan konten
+        document.querySelector(".container").style.display = "block";
+    });
+
     try {
         const response = await fetch("/api/repos");
         const repos = await response.json();
