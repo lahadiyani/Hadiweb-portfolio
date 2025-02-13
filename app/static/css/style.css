@@ -241,6 +241,29 @@ body {
     max-width: 400px;
 }
 
+.social-media {
+    background: linear-gradient(to right, #4392fd, #0af1fa);
+    border-radius: 18px;
+    max-width: 300px;
+    padding: 8px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px; /* Jarak dari lead-text */
+    position: absolute;
+    transform: translateX(230px) translateY(-90px);
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
 /* Media Query untuk iPad (768px ke bawah) */
 @media screen and (max-width: 768px) {
     .header-container {

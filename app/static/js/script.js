@@ -15,6 +15,30 @@ document.addEventListener("DOMContentLoaded", async () => {
         menuIcon.style.display = "block";
     });
 
+    function openFacebook(event) {
+        event.preventDefault(); // Mencegah link langsung ke browser
+        var fbAppUrl = "fb://profile/100078252237871";
+        var fbWebUrl = "https://www.facebook.com/profile.php?id=100078252237871";
+    
+        // Deteksi apakah perangkat adalah mobile
+        var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    
+        if (isMobile) {
+            // Coba buka aplikasi Facebook jika perangkat mobile
+            var timeout = setTimeout(function () {
+                window.location.href = fbWebUrl; // Jika gagal buka app, alihkan ke web
+            }, 1000);
+    
+            window.location.href = fbAppUrl;
+    
+            // Jika berhasil buka aplikasi, hentikan redirect ke web
+            setTimeout(() => clearTimeout(timeout), 500);
+        } else {
+            // Jika bukan mobile, langsung ke web
+            window.location.href = fbWebUrl;
+        }
+    }
+
     window.addEventListener("load", function() {
         // Sembunyikan spinner setelah load selesai
         document.querySelector(".spinner-wrapper").style.display = "none";
