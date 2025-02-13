@@ -4,6 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hadiani | Backend Web Developer</title>
+    <meta name="description" content="Saya adalah Hadiani, seorang web developer & programmer yang berpengalaman dalam membangun website modern, aplikasi berbasis web, dan solusi berbasis AI. Kunjungi portfolio saya untuk melihat proyek terbaru!">
+    <meta name="author" content="Hadiani">
+     
+     <!-- Open Graph (OG) Meta Tags - Untuk berbagi di Facebook, Twitter, dll. -->
+     <meta property="og:title" content="Portfolio Hadiani">
+     <meta property="og:description" content="Mau Lihat Projek saya silahkan kunjungi website saya">
+     <meta property="og:image" content="{{url_for('static', filename='assets/image/favicon.jpg')}}">
+     <meta property="og:image:alt" content="Logo Hadiweb">
+     <meta property="og:type" content="website portfolio">
+     <meta property="og:url" content="https://hadiweb-portfolio.vercel.app/">
+ 
+     <!-- Twitter Card Meta Tags - Untuk berbagi di Twitter -->
+     <meta name="twitter:card" content="summary_large_image">
+     <meta name="twitter:title" content="Portfolio Hadiani">
+     <meta name="twitter:description" content="Mau Lihat Projek saya silahkan kunjungi website saya">
+     <meta name="twitter:image" content="{{url_for('static', filename='assets/image/favicon.jpg')}}">
+     <meta name="twitter:image:alt" content="Logo Hadiweb">
+     <meta name="twitter:creator" content="@AnsarCool1">
+
+     <!-- Open Graph (Facebook, WhatsApp, Instagram) -->
+    <meta property="og:title" content="Portfolio | Hadiani">
+    <meta property="og:description" content="Jelajahi karya terbaik saya dalam pengembangan web, aplikasi AI, dan desain UI/UX modern.">
+    <meta property="og:image" content="tent="Mau Lihat Projek saya silahkan kunjungi website saya">
+    <meta name="twitter:image" content="{{url_for('static', filename='assets/image/favicon.jpg')}}">
+    <meta property="og:image:alt" content="Logo HadiWeb">
+    <meta property="og:type" content="website portfolio">
+    <meta property="og:url" content="https://hadiweb-portfolio.vercel.app/">
+ 
+     <!-- Meta Robots (Untuk mengontrol crawling search engine) -->
+     <meta name="robots" content="index, follow"> <!-- Bisa juga "noindex, nofollow" -->
     <link rel="shortcut icon" href="{{url_for('static', filename='assets/image/favicon.jpg')}}" type="image/x-icon">
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
 </head>
@@ -43,6 +73,14 @@
                     <div class="text-box">
                         <h1 class="name-text">Hadiani</h1>
                         <p class="lead-text"></p>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://github.com/lahadiyani" class="social-icon">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                        <a href="https://github.com/lahadiyani" class="social-icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
                     </div>
                     <img src="{{url_for('static', filename='assets/image/hero.png')}}" alt="Logo Hadi" class="image-hero">
                 </div>

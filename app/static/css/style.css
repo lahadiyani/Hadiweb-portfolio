@@ -191,6 +191,10 @@ body {
 .name-text {
     font-size: 60px;
     font-weight: 600;
+    background: linear-gradient(to right, #4392fd, #0af1fa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .lead-text {
