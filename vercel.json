@@ -1,19 +1,26 @@
 {
-    "buildCommand": "pip install -r requirements.txt && flask run",
-    "builds": [
-      {
-        "src": "main.py",
-        "use": "@vercel/python"
-      },
-      {
-        "src": "static/**",
-        "use": "@vercel/static"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "main.py"
-      }
-    ]
-  }
+  "buildCommand": "pip install -r requirements.txt && flask run",
+  "builds": [
+    {
+      "src": "main.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "static/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "main.py"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "https://www.hadiweb-portfolio.vercel.app/(.*)",
+      "destination": "https://hadiweb-portfolio.vercel.app/$1",
+      "permanent": true
+    }
+  ]
+}

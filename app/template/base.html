@@ -3,37 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hadiani | Backend Web Developer</title>
-    <meta name="description" content="Saya adalah Hadiani, seorang web developer & programmer yang berpengalaman dalam membangun website modern, aplikasi berbasis web, dan solusi berbasis AI. Kunjungi portfolio saya untuk melihat proyek terbaru!">
+    <title>Hadiani | Backend Web Developer, AI Solutions & Modern Web Applications</title>
+    <meta name="description" content="Hadiani, seorang web developer berpengalaman, spesialis di pengembangan backend, aplikasi web modern, dan solusi AI. Kunjungi portfolio saya untuk proyek terbaru!">
     <meta name="author" content="Hadiani">
-     
-     <!-- Open Graph (OG) Meta Tags - Untuk berbagi di Facebook, Twitter, dll. -->
-     <meta property="og:title" content="Portfolio Hadiani">
-     <meta property="og:description" content="Mau Lihat Projek saya silahkan kunjungi website saya">
-     <meta property="og:image" content="{{url_for('static', filename='assets/image/favicon.jpg')}}">
-     <meta property="og:image:alt" content="Logo Hadiweb">
-     <meta property="og:type" content="website portfolio">
-     <meta property="og:url" content="https://hadiweb-portfolio.vercel.app/">
- 
-     <!-- Twitter Card Meta Tags - Untuk berbagi di Twitter -->
-     <meta name="twitter:card" content="summary_large_image">
-     <meta name="twitter:title" content="Portfolio Hadiani">
-     <meta name="twitter:description" content="Mau Lihat Projek saya silahkan kunjungi website saya">
-     <meta name="twitter:image" content="{{url_for('static', filename='assets/image/favicon.jpg')}}">
-     <meta name="twitter:image:alt" content="Logo Hadiweb">
-     <meta name="twitter:creator" content="@AnsarCool1">
+    <link rel="canonical" href="https://hadiweb-portfolio.vercel.app/" />
 
-     <!-- Open Graph (Facebook, WhatsApp, Instagram) -->
-    <meta property="og:title" content="Portfolio | Hadiani">
-    <meta property="og:description" content="Jelajahi karya terbaik saya dalam pengembangan web, aplikasi AI, dan desain UI/UX modern.">
-    <meta property="og:image" content="tent="Mau Lihat Projek saya silahkan kunjungi website saya">
-    <meta name="twitter:image" content="{{url_for('static', filename='assets/image/favicon.jpg')}}">
-    <meta property="og:image:alt" content="Logo HadiWeb">
-    <meta property="og:type" content="website portfolio">
+    <!-- Open Graph (OG) Meta Tags -->
+    <meta property="og:title" content="Portfolio Hadiani | Web Developer, AI Solutions & Modern Apps">
+    <meta property="og:description" content="Jelajahi karya terbaik saya dalam pengembangan web, aplikasi AI, dan desain UI/UX modern. Kunjungi portfolio saya untuk melihat proyek yang menakjubkan.">
+    <meta property="og:image" content="{{url_for('static', filename='assets/image/favicon.jpg')}}">
+    <meta property="og:image:alt" content="Logo Hadiweb">
+    <meta property="og:type" content="website">
     <meta property="og:url" content="https://hadiweb-portfolio.vercel.app/">
- 
-     <!-- Meta Robots (Untuk mengontrol crawling search engine) -->
-     <meta name="robots" content="index, follow"> <!-- Bisa juga "noindex, nofollow" -->
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfolio Hadiani | Web Developer, AI Solutions & Modern Apps">
+    <meta name="twitter:description" content="Jelajahi karya terbaik saya dalam pengembangan web, aplikasi AI, dan desain UI/UX modern. Kunjungi portfolio saya untuk melihat proyek yang menakjubkan.">
+    <meta name="twitter:image" content="{{url_for('static', filename='assets/image/favicon.jpg')}}">
+    <meta name="twitter:image:alt" content="Logo Hadiweb">
+    <meta name="twitter:creator" content="@AnsarCool1">
+
+    <!-- General SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+
     <link rel="shortcut icon" href="{{url_for('static', filename='assets/image/favicon.jpg')}}" type="image/x-icon">
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
 </head>
@@ -72,6 +65,12 @@
             </nav>
         </header>
         <main class="content-container">
+            <section class="mode-toolbar">
+                <div class="toolbar-box">
+                    <ion-icon name="sunny" class="sunny-icon"></ion-icon>
+                    <ion-icon name="moon" class="moon-icon"></ion-icon>
+                </div>
+            </section>
             <section class="about-container">
                 <div class="about-content">
                     <div class="text-box">

@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const roles = ["Web developer", "Mahasiswa", "Animelovers"];
     let roleIndex = 0;
     let textElement = document.querySelector(".lead-text");
-    const fullText = " yang selalu penasaran dengan hal-hal baru, hobi ngulik proyek, eksplorasi teknologi, dan nonton anime. Bagi saya, coding adalah seni dan tantangan yang bikin otak terus berpikir kreatif.";
+    const fullText = " yang selalu penasaran dengan hal-hal baru, hobi ngulik proyek, eksplorasi teknologi, dan baca komik. Bagi saya, coding adalah seni dan tantangan yang bikin otak terus berpikir kreatif.";
         
     function typeWriter(text, i, callback) {
         if (i < text.length) {
