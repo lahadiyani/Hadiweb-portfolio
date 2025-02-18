@@ -15,12 +15,5 @@
       "src": "/(.*)",
       "dest": "main.py"
     }
-  ],
-  "redirects": [
-    {
-      "source": "https://www.hadiweb-portfolio.vercel.app/(.*)",
-      "destination": "https://hadiweb-portfolio.vercel.app/$1",
-      "permanent": true
-    }
   ]
 }
