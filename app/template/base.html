@@ -38,7 +38,7 @@
     <div class="container">
         <header class="header-container">
             <div class="image-container">
-                <img src="{{url_for('static', filename='assets/image/logo.png')}}" alt="HadiWeb Logo" class="logo-image">
+                <img src="{{url_for('static', filename='assets/image/logo.png')}}" alt="HadiWeb Logo" data-logo-light="{{url_for('static', filename='assets/image/logo.png')}}" data-logo-dark="{{url_for('static', filename='assets/image/logo-darkmode.png')}}" class="logo-image">
             </div>
             <div class="hamburger-icon">
                 <ion-icon name="menu" class="menu-icon"></ion-icon>
@@ -53,10 +53,10 @@
                         <a href="#about-container" class="link-bar" aria-label="This About Me">About Me</a>
                     </li>
                     <li class="navigation">
-                        <a href="#project-container" class="link-bar" aria-label="This My Project">Project</a>
+                        <a href="#skill-container" class="link-bar" aria-label="This My Skills">Skills</a>
                     </li>
                     <li class="navigation">
-                        <a href="#skill-container" class="link-bar" aria-label="This My Skill">Skills</a>
+                        <a href="#project-container" class="link-bar" aria-label="This My Projects">Projects</a>
                     </li>
                     <li class="navigation">
                         <a href="#contact-container" class="link-bar" aria-label="This My Contact">Contact Me</a>
@@ -85,7 +85,160 @@
                         </div>
                         <p class="lead-text"></p>
                     </div>
-                    <img src="{{url_for('static', filename='assets/image/hero.png')}}" alt="Logo Hadi" class="image-hero">
+                    <img src="{{url_for('static', filename='assets/image/hero.svg')}}" alt="Logo Hadi" class="image-hero">
+                </div>
+            </section>
+            <section class="about-all-container" id="about-container">
+                <div class="about-me">
+                    <h2 class="title-about">About Me</h2>
+                    <div class="about-content-all">
+                        <div class="texts-abouts">
+                            <p class="text-about">Halo, perkenalkan nama saya La Hadiani, saya berusia 22 tahun. Saya berasal dari Wanci, Wakatobi, Sulawesi Tenggara. Saat ini, saya adalah seorang Web Developer sekaligus mahasiswa di Institut Teknologi dan Bisnis Muhammadiyah (ITBM) Wakatobi, dengan jurusan Teknologi Informasi. Saya memiliki minat yang besar dalam dunia teknologi, khususnya pengembangan web. Saya selalu tertarik untuk belajar hal-hal baru, mengembangkan keterampilan pemrograman, serta menciptakan solusi digital yang bermanfaat. Salam kenal, dan saya berharap bisa terus berkembang serta berbagi ilmu dengan teman-teman semua!</p>
+                        </div>
+                        <div class="photo-me">
+                            <img src="{{url_for('static', filename='assets/image/me.jpg')}}" alt="La Hadiani" class="me">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="skill-container" id="skill-container">
+                <h2 class="skills-title">My Skills</h2>
+                <div class="skill-category">
+                    <h2>Languages</h2>
+              
+                    <div class="skill-item">
+                      <span>HTML</span>
+                      <div class="progress-container">
+                        <div class="progress" data-progress="90"></div>
+                      </div>
+                    </div>
+              
+                    <div class="skill-item">
+                      <span>CSS</span>
+                      <div class="progress-container">
+                        <div class="progress" data-progress="75"></div>
+                      </div>
+                    </div>
+              
+                    <div class="skill-item">
+                      <span>JavaScript</span>
+                      <div class="progress-container">
+                        <div class="progress" data-progress="55"></div>
+                      </div>
+                    </div>
+              
+                    <div class="skill-item">
+                      <span>Python</span>
+                      <div class="progress-container">
+                        <div class="progress" data-progress="55"></div>
+                      </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <span>Php</span>
+                        <div class="progress-container">
+                          <div class="progress" data-progress="30"></div>
+                        </div>
+                      </div>
+                  </div>
+              
+                  <!-- Kategori 2: Frameworks -->
+                  <div class="skill-category">
+                    <h2>Frameworks</h2>
+              
+                    <div class="skill-item">
+                      <span>React</span>
+                      <div class="progress-container">
+                        <div class="progress" data-progress="20"></div>
+                      </div>
+                    </div>
+              
+                    <div class="skill-item">
+                      <span>Flask</span>
+                      <div class="progress-container">
+                        <div class="progress" data-progress="60"></div>
+                      </div>
+                    </div>
+              
+                    <div class="skill-item">
+                      <span>Django</span>
+                      <div class="progress-container">
+                        <div class="progress" data-progress="30"></div>
+                      </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <span>Laravel</span>
+                        <div class="progress-container">
+                          <div class="progress" data-progress="30"></div>
+                        </div>
+                      </div>
+                  </div>
+              
+                  <!-- Kategori 3: Databases -->
+                  <div class="skill-category">
+                    <h2>Databases</h2>
+              
+                    <div class="skill-item">
+                      <span>MySQL</span>
+                      <div class="progress-container">
+                        <div class="progress" data-progress="55"></div>
+                      </div>
+                    </div>
+              
+                    <div class="skill-item">
+                      <span>MongoDB</span>
+                      <div class="progress-container">
+                        <div class="progress" data-progress="30"></div>
+                      </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <span>PostgreSQL</span>
+                        <div class="progress-container">
+                          <div class="progress" data-progress="20"></div>
+                        </div>
+                      </div>
+                  </div>
+              
+                  <!-- Kategori 4: Others -->
+                  <div class="skill-category">
+                    <h2>Others</h2>
+              
+                    <div class="skill-item">
+                      <span>Git</span>
+                      <div class="progress-container">
+                        <div class="progress" data-progress="60"></div>
+                      </div>
+                    </div>
+              
+                    <div class="skill-item">
+                      <span>GitHub</span>
+                      <div class="progress-container">
+                        <div class="progress" data-progress="70"></div>
+                      </div>
+                    </div>
+              
+                    <div class="skill-item">
+                      <span>Adobe XD</span>
+                      <div class="progress-container">
+                        <div class="progress" data-progress="45"></div>
+                      </div>
+                    </div>
+              
+                    <div class="skill-item">
+                      <span>AI & Prompt Engginering</span>
+                      <div class="progress-container">
+                        <div class="progress" data-progress="85"></div>
+                      </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <span>Construct 2</span>
+                        <div class="progress-container">
+                          <div class="progress" data-progress="30"></div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="project-container" style="display: none;">
@@ -94,9 +247,6 @@
 
                     </div>
                 </div>
-            </section>
-            <section class="skill-container">
-                
             </section>
             <section class="contact-container">
                 <div class="contact-content">
